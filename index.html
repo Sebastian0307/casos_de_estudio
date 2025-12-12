@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios del 8 al 14</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ejercicios</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link" href="#e8">Ejercicio 8</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e9">Ejercicio 9</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e10">Ejercicio 10</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e11">Ejercicio 11</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e12">Ejercicio 12</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e13">Ejercicio 13</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e14">Ejercicio 14</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <div class="card" id="e8">
+            <div class="card-header bg-dark text-white">Ejercicio 8</div>
+            <div class="card-body">
+                <label>Número 1</label>
+                <input type="number" id="num_1" class="form-control mb-2">
+
+                <label>Número 2</label>
+                <input type="number" id="num_2" class="form-control mb-2">
+
+                <label>Número 3</label>
+                <input type="number" id="num_3" class="form-control mb-2">
+
+                <p id="respuesta8"></p>
+                <button class="btn btn-primary" onclick="ejercicio8()">Calcular mayor</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e9">
+            <div class="card-header bg-dark text-white">Ejercicio 9</div>
+            <div class="card-body">
+
+                <label>Tipo de llanta</label>
+                <input type="text" id="tipo" class="form-control mb-2">
+
+                <label>Grosor</label>
+                <input type="number" step="0.1" id="grosor" class="form-control mb-2">
+
+                <label>Diámetro</label>
+                <input type="number" step="0.1" id="diametro" class="form-control mb-2">
+
+                <label>Marca</label>
+                <input type="text" id="marca" class="form-control mb-2">
+
+                <p id="respuesta9a"></p>
+                <p id="respuesta9b"></p>
+
+                <button class="btn btn-primary" onclick="ejercicio9()">Evaluar llanta</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e10">
+            <div class="card-header bg-dark text-white">Ejercicio 10</div>
+            <div class="card-body">
+                <label>Ingrese un número</label>
+                <input type="text" id="num" class="form-control mb-2">
+
+                <p id="respuesta10"></p>
+                <button class="btn btn-primary" onclick="ejercicio10()">Comprobar</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e11">
+            <div class="card-header bg-dark text-white">Ejercicio 11</div>
+            <div class="card-body">
+                <label>Peso (kg)</label>
+                <input type="number" id="peso" class="form-control mb-2">
+
+                <label>Estatura (mts)</label>
+                <input type="number" id="estatura" class="form-control mb-2">
+
+                <p id="respuesta11"></p>
+                <button class="btn btn-primary" onclick="ejercicio11()">Calcular IMC</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e12">
+            <div class="card-header bg-dark text-white">Ejercicio 12</div>
+            <div class="card-body">
+
+                <label>Temperatura °C</label>
+                <input type="number" id="temp" class="form-control mb-2">
+
+                <p id="respuesta12"></p>
+                <button class="btn btn-primary" onclick="ejercicio12()">Ver estado</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e13">
+            <div class="card-header bg-dark text-white">Ejercicio 13</div>
+            <div class="card-body">
+                <label>Lado 1</label>
+                <input type="number" id="lado_1" class="form-control mb-2">
+
+                <label>Lado 2</label>
+                <input type="number" id="lado_2" class="form-control mb-2">
+
+                <label>Lado 3</label>
+                <input type="number" id="lado_3" class="form-control mb-2">
+
+                <p id="respuesta13"></p>
+                <button class="btn btn-primary" onclick="ejercicio13()">Clasificar triángulo</button>
+            </div>
+        </div>
+
+        <div class="card" id="e14">
+            <div class="card-header bg-dark text-white">Ejercicio 14</div>
+            <div class="card-body">
+
+                <label>Nivel de riesgo (1-5)</label>
+                <input type="number" id="nivel" class="form-control mb-2">
+
+                <p id="respuesta14"></p>
+                <button class="btn btn-primary" onclick="ejercicio14()">Mostrar riesgo</button>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
