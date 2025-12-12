@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios del 1 al 7</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ejercicios</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav me-auto">
+
+                    <li class="nav-item"><a class="nav-link" href="#e1">Ejercicio 1</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e2">Ejercicio 2</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e3">Ejercicio 3</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e4">Ejercicio 4</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e5">Ejercicio 5</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e6">Ejercicio 6</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#e7">Ejercicio 7</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+
+
+        <div class="card" id="e1">
+            <div class="card-header bg-dark text-white">Ejercicio 1</div>
+            <div class="card-body">
+                <label>Numero de personas</label>
+                <input type="text" id="nump" class="form-control mb-2">
+
+                <p id="respuesta"></p>
+
+                <button class="btn btn-primary" onclick="ejercicio1()">Realizar operación</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e2">
+            <div class="card-header bg-dark text-white">Ejercicio 2</div>
+            <div class="card-body">
+                <label>Precio del traje</label>
+                <input type="text" id="pre_traje" class="form-control mb-2">
+
+                <p id="respuesta2"></p>
+                <p id="respuesta2_des"></p>
+                <p id="respuesta2_por"></p>
+                <button class="btn btn-primary" onclick="ejercicio2()">Realizar operación</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e3">
+            <div class="card-header bg-dark text-white">Ejercicio 3</div>
+            <div class="card-body">
+
+                <label>Número de hamburguesas</label>
+                <input type="number" id="num_hamburguesas" class="form-control mb-2">
+
+                <label>Tipo</label>
+                <select id="lista_tipo" class="form-select mb-2">
+                    <option value="sencilla">Sencilla</option>
+                    <option value="dobles">Dobles</option>
+                    <option value="triples">Triples</option>
+                </select>
+
+                <label>Método de pago</label>
+                <select id="lista_pago" class="form-select mb-2">
+                    <option value="Tarjeta">Tarjeta</option>
+                    <option value="Efectivo">Efectivo</option>
+                </select>
+
+                <p id="respuesta3_uni"></p>
+                <p id="respuesta3_pago"></p>
+                <p id="respuesta3_sub_cargo"></p>
+                <p id="respuesta3_cargo"></p>
+                <p id="respuesta3_total"></p>
+                <button class="btn btn-primary" onclick="ejercicio3()">Realizar operación</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e4">
+            <div class="card-header bg-dark text-white">Ejercicio 4</div>
+            <div class="card-body">
+                <label>Peso del paquete (Kg)</label>
+                <input type="number" id="peso_paquete" class="form-control mb-2">
+
+                <label>Zona</label>
+                <select id="lista_zonas" class="form-select mb-2">
+                    <option value="1">Zona 1</option>
+                    <option value="2">Zona 2</option>
+                    <option value="3">Zona 3</option>
+                    <option value="4">Zona 4</option>
+                    <option value="5">Zona 5</option>
+                </select>
+
+                <p id="respuesta4"></p>
+                <button class="btn btn-primary" onclick="ejercicio4()">Realizar operación</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e5">
+            <div class="card-header bg-dark text-white">Ejercicio 5</div>
+            <div class="card-body">
+                <label>Precio inicial</label>
+                <input type="text" id="pre_panela" class="form-control mb-2">
+
+                <label>Kilos producción</label>
+                <input type="number" id="kg_panela" class="form-control mb-2">
+
+                <label>Tipo</label>
+                <select id="lista_tipo2" class="form-select mb-2">
+                    <option value="tipo1">Tipo P1</option>
+                    <option value="tipo2">Tipo P2</option>
+                </select>
+
+                <label>Tamaño</label>
+                <select id="lista_tamaños" class="form-select mb-2">
+                    <option value="tamaño1">Tamaño 1</option>
+                    <option value="tamaño2">Tamaño 2</option>
+                </select>
+
+                <p id="respuesta5"></p>
+                <button class="btn btn-primary" onclick="ejercicio5()">Realizar operación</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e6">
+            <div class="card-header bg-dark text-white">Ejercicio 6</div>
+            <div class="card-body">
+                <label>Cantidad de audífonos</label>
+                <input type="number" id="audifonos" class="form-control mb-2">
+
+                <p id="respuesta6"></p>
+                <button class="btn btn-primary" onclick="ejercicio6()">Realizar operación</button>
+            </div>
+        </div>
+
+
+        <div class="card" id="e7">
+            <div class="card-header bg-dark text-white">Ejercicio 7</div>
+            <div class="card-body">
+                <label>Horas laboradas</label>
+                <input type="number" id="horas" class="form-control mb-2">
+
+                <p id="respuesta7"></p>
+                <button class="btn btn-primary" onclick="ejercicio7()">Calcular salario</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main2.js"></script>
+
+</body>
+
+</html>
